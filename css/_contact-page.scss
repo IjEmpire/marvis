@@ -1,0 +1,54 @@
+.welcome-note{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center; 
+   margin-top: 5px;
+   color:  hsl(210, 10%, 65%);
+   margin-bottom: 10px;
+
+   @media screen and (max-width: 800px){
+    margin-top: 0;
+}
+
+   .welcome-note-1{
+       padding: 20px;
+   }
+   .welcome-note-2{
+       font-size: 30px;
+   }
+}
+
+.msg-zone{
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:  hsl(210, 10%, 65%);
+
+        input, textarea{
+            text-align: left;
+            padding: 10px 30px;
+            margin: 25px 20px 10px 20px;
+            outline:none;
+            border: 1px solid hsl(210, 10%, 65%);
+            border-radius: 5px;
+            max-width: 60%;
+            width: 100%;
+            font-size: initial;
+            line-height: 1.5;
+
+            @media screen and (max-width : 1400px){
+                max-width: 40%;
+            }
+
+            @media screen and (max-width : 800px){
+                max-width: 70%;
+            }
+        }
+    }
+}

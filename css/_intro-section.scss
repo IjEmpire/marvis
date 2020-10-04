@@ -1,0 +1,144 @@
+.intro-section{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 760px){
+        margin-top: 80px;
+    }
+
+    @media screen and (max-width: 500px){
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width: 400px){
+        margin-top: 20px;
+    }
+}
+.intro-h1{
+    font-size: 35px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+
+    @media screen and (max-width: 760px){
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 500px){
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 400px){
+        font-size: 20px;
+    }
+}
+.intro-p{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: hsl(201, 11%, 55%);
+
+    @media screen and (max-width: 760px){
+        font-size: 17px;
+    }
+}
+.intro{
+    line-height: 1.5;
+
+    .avatar{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        background: hsl(210, 10%, 95%);
+
+        @media screen and (max-width: 760px){
+            width: 30%;
+        }
+    }
+}
+.hi{
+    margin-top: 50px;
+    width: 90%;
+    background: #FFEAA7;
+    padding: 9rem;
+    border-radius: 25px;
+
+    @media screen and (max-width: 760px){
+        background: #FCD770;
+        padding: 3rem;
+    }
+
+    @media screen and (max-width: 500px){
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 400px){
+        padding: .5rem;
+        width: 100%;
+    }
+}
+.hi-wrap{
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+
+    @media screen and (max-width: 760px){
+        padding: 4px;
+    }
+
+    @media screen and (max-width: 500px){
+        padding: 3rem;
+    }
+
+    @media screen and (max-width: 400px){
+        padding: 2.5px;
+    }
+}
+.hi-wrap h1{
+    font-size: 28px;
+    line-height: 1.5;
+
+    @media screen and (max-width: 760px){
+        line-height: 1.4;
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 500px){
+        line-height: 1.3;
+        font-size: 23px;
+    }
+
+    @media screen and (max-width: 400px){
+        line-height: 1.15;
+        font-size: 21px;
+    }
+}
+.hi-wrap h2{
+    margin-top: 1.5em;
+    font-size: 19px;
+    line-height: 2.0;
+    color: hsl(201, 11%, 25%);
+
+    @media screen and (max-width: 760px){
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    @media screen and (max-width: 500px){
+        font-size: 16.5px;
+        line-height: 1.6;
+    }
+
+    @media screen and (max-width: 400px){
+        font-weight: light;
+        font-size: 15px;
+        line-height: 1.6;
+        color: hsl(201, 11%, 40%);
+        padding: 0 10px;
+    }
+}

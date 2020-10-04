@@ -1,0 +1,80 @@
+*{
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(0, 0%, 99%);
+}
+::-webkit-scrollbar {
+    width: 12px;
+    margin-right: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#69D6F4, #FFEAA7);
+    border-radius: 5px;
+
+    &:hover{
+        background: linear-gradient(#FFEAA7,#FF826E,#B27946,#69D6F4);
+    }
+
+    @media screen and (max-width: 760px){
+        background: #FCD770;
+    }
+}
+
+.recent-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+    
+    &-btn{
+        padding: 20px 10px;
+        
+        a{
+            background: #FFEAA7;
+            padding: 10px 40px;
+            border-radius: 25px;
+            color: hsl(201, 11%, 15%);
+            font-weight: bold;
+            text-decoration: none;
+            transition: 1s ease-in-out;
+
+            @media screen and (max-width: 500px){
+                padding: 10px 25px;
+            }
+
+            &:hover{
+                background: #69D6F4;
+                color: hsl(201, 11%, 5%);
+                font-weight: bolder;
+            }
+        }
+
+        button{
+            background: #FFEAA7;
+            padding: 10px 60px;
+            border-radius: 25px;
+            color: hsl(201, 11%, 15%);
+            font-weight: bold;
+            text-decoration: none;
+            transition: 1s ease-in-out;
+            border: none;
+            outline: none;
+
+            @media screen and (max-width: 500px){
+                padding: 10px 35px;
+                font-weight: light;
+            }
+
+            &:hover{
+                background: #69D6F4;
+                color: hsl(201, 11%, 5%);
+                font-weight: bolder;
+            }
+        }
+    }
+}
