@@ -1,0 +1,345 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* MASTER STYLES */
+body{
+	background-color: #b7d7e8;
+	font-family: "Lato", sans-serif;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/* NAV STYLES */
+.nav-wrapper{
+	border-bottom: 1px solid black;
+	border-bottom-width: 90%;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+}
+
+.left-side{
+	display: flex;
+}
+
+.nav-wrapper > .left-side >div {
+	margin-right: 20px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+.nav-wrapper .brand .myname{
+	letter-spacing: 1px;
+	font-weight: bold;
+	background-color: #d6d4e0;
+	padding: 5px;
+	border: 1px solid transparent;
+	transition: .5s ease-in-out;
+}
+.brand .myname:hover{
+	color: rgba(214,212,224,.8);
+	background-color: black;
+}
+
+
+.nav-link-wrapper{
+	height: 18px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+	border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+	color: black;
+}
+
+.active-nav-link{
+	border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+	color: black !important;
+}
+
+/*SECTION INTRO STYLES */
+
+section{
+	width: 50%;
+	max-width: var(--innerWidth);
+	margin: 0 auto;
+}
+section .intro-head{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.intro-head h2{
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-family: "Lato", sans-serif;
+	margin: 1.25rem 0;
+	text-align: center;
+}
+.details-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.details-wrap .img{
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	background: white;
+	padding: 0.25rem;
+	border: 1px solid black;
+	box-shadow: 0 5px 5px black;
+	transition: .5s ease-in-out;
+}
+
+.details-wrap .img:hover {
+	box-shadow: 0 5px 5px white;
+}
+
+.details-wrap .name{
+	margin: 1rem 0 0.4rem 0;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: 1.25px;
+	padding: .5rem;
+	border: .5px solid black;
+	border-radius: 1px;
+	transition: .3s ease-in-out;
+}
+.details-wrap .name:hover{
+	border: .5px solid #b7d7e8;
+	box-shadow: 1px -.5px 2px 3px white;
+}
+
+.details-wrap .jobtitle{
+	margin: 1.1rem 0;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+.details-wrap .bio{
+	line-height: 1.8;
+	max-width: 35em;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+}
+.details-wrap .icon{
+	margin-top: 0;
+	margin-bottom: 2.5rem;
+}
+
+/* PORTFOLIO STYLES */
+
+.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+	position: relative;
+	border: 2px solid gray;
+	margin: 1px;
+	padding: 0px;
+	cursor: pointer;
+}
+.portfolio-item-wrapper:hover{
+	
+}
+.portfolio-img-background{
+	height: 210px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+
+/* be specific with your selector from now*/
+
+.img-text-wrapper .Subtitle{
+	transition: .5s;
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	color: transparent;
+	text-transform: capitalize;
+	background: rgba(255,255,255,.1)
+
+}
+
+.portfolio-item-wrapper:hover .Subtitle{
+	transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.2);
+	font-weight: 600;
+	color: lightseagreen;
+}
+
+.img-darken {
+	transition: .5s;
+	filter: brightness(15%);
+}
+
+
+/*STYLES FOR THE ABOUT PAGE!!! NOT FOR THE INDEX PAGE!!!*/
+
+
+.two-column-wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.profile-img-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+.profile-img-wrapper img{
+	border: 2px solid white;
+	-webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 5px 5px #fff;
+}
+.two-column-wrapper a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.5rem;
+	color: red;
+	
+}
+
+.profile-content-wrapper{
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.profile-content-wrapper h1{
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-family: "Lato", sans-serif;
+	margin: 1.5rem 0;
+	text-align: center;
+}
+.profile-content-wrapper p{
+	font-family: "Lato", sans-serif;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	text-align: center;
+}
+.profile-content-wrapper .madiba{
+	margin: 1.7em 0;
+	text-transform: capitalize;
+	font-family: pacifico;
+}
+
+@media only screen and (max-width: 950px) {
+
+	.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+	
+	.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+@media only screen and (max-width: 520px) {
+	
+	.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	}
+	.nav-wrapper{
+	background: #b7d7e8;
+	border-bottom: 1px solid lightseagreen;
+	border-bottom-width: 90%;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	}
+	.nav-wrapper:hover{
+		border-bottom: 3px solid black;
+		transition: .3s;
+	}
+	.nav-wrapper .brand .myname{
+	letter-spacing: 1px;
+	font-weight: bold;
+	background-color: #d6d4e0;
+	padding: 5px;
+	border: 1px solid transparent;
+	transition: 1s;
+	}
+	.brand .myname:hover{
+	color: rgba(214,212,224,.8);
+	background-color: black;
+	font-size: .9rem;
+	transition: 1s;
+	border: 1px solid #d4ac6e;
+	}
+	body{
+	background-color: black;
+	font-family: "Lato", sans-serif;
+	}
+	section{
+	color: #b7d7e8;
+	}
+	.two-column-wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+	}
+	.details-wrap .img{
+	width: 120px;
+	height: 120px;
+	box-shadow: 0 5px 5px #b7d7e8;
+	transition: 1s;
+	}
+	.details-wrap .name{
+	margin: 2rem 0 0 0;
+	font-size: .6rem;
+	transition: 1s;
+	}
+}
+
+

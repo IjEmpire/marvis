@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>IJENWA</title>
+</head>
+<body>
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper active-nav-link">
+					<a href="index.html">Home</a>
+				</div>
+				
+				<div class="nav-link-wrapper">
+					<a href="about.html">About</a>
+				</div>
+			</div>
+			
+			<div class="right-side">
+				<div class="brand">
+					<div class="myname"> MARVIS&nbsp;&nbsp; IJENWA </div>
+				</div>
+			</div>
+		</div>
+		
+		<section>
+			<div class="intro-head">
+				<h2>front-end web developer</h2>
+			</div>
+			<div class="details-wrap">
+				<img src="images/photo.jpg" class="img">
+				<p class="name">marvis ijenwa</p>
+				<p class="jobtitle">web developer</p>
+				<p class="bio">I work with html, css, javascript and a </br>
+				range of javascript frameworks to bring ideas to reality.
+				</p>
+				<p class="icon"><i class="fas fa-quote-right"></i></p>
+			</div>
+		</section>
+		
+		<div class="content-wrapper">
+			<div class="portfolio-items-wrapper">
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/tierHeim2.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							jena shelter project
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/tierHeim1.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							pet shelter project
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/tierHeim.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							pet rescue project
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/tinyNG1.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							tiny homes nigeria
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/tinyNG.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							tiny house living
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/afroEssen.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							food blog project
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/blog.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							personal blog project
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/blog1.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							blog project
+						</div>
+					</div>
+				</div> 
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/todoJS.png)"></div>		
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="">
+						</div>
+					
+						<div class="Subtitle">
+							to-do list javascript
+						</div>
+					</div>
+				</div> 
+				
+			</div>
+		</div>
+
+	</div>
+</body>
+<script>
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+	
+	portfolioItems.forEach(portfolioItem =>{
+		portfolioItem.addEventListener('mouseover', () => {
+			console.log(portfolioItem.childNodes[1].classList);
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+		
+		portfolioItem.addEventListener('mouseout', () => {
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+
+</html>
