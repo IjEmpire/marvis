@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="nav-pets-style.css">
+	<script src="index.js"></script>
+	<style>
+		.adopt-wrapper{
+		background: url(adopt2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100vh;
+		}
+		.adopt-form-wrapper{
+		float: right;
+		margin: 50px 20px 0px 0px;
+		padding: 10px;
+		background: rgba(255,255,255,.2);
+		}
+		.adopt-form-wrapper h2{
+		text-align: center;
+		font-family: helvetica;
+		color: #342127;
+		background: rgba(255,255,255,.5);
+		}
+		.adopt-form-wrapper form{
+		margin: 5px;
+		padding: 5px;
+		}
+		.adopt-form-wrapper form input{
+		margin: 1px 0 3px 10px;
+		padding: 5px;
+		outline: transparent;
+		background: linear-gradient(to right, #342127,white);
+		border: 2px solid #f5f5f5;
+		color: white;
+		font-family: comic sans ms;
+		}
+		.adopt-form-wrapper form label{
+		margin: 0 0 0 10px;
+		font-size: 14px;
+		font-family: comic sans ms;
+		color: #342127;
+		font-weight: bold;
+		}
+		.adopt-form-wrapper form .own-pets{
+		margin: 5px 0 5px 10px;
+		font-size: 14px;
+		font-family: comic sans ms;
+		color: #342127;
+		font-weight: bold;
+		}
+		.adopt-form-wrapper form .radio{
+		display: flex;
+		}
+		.adopt-form-wrapper form .why{
+		text-align: center;
+		text-transform: uppercase;
+		font-family: helvetica;
+		color: #342127;
+		background: linear-gradient(to left, #342127,white);
+		padding: 3px 1px;
+		}
+		.adopt-form-wrapper form textarea{
+		margin: 3px 2px;
+		border: 5px solid #f5f5f5;
+		font-family: comic sans ms;
+		background:rgba(0,0,0,.3);
+		font-size: 15px;
+		color: white;
+		outline: none;
+		padding:2px;
+		}
+		.adopt-form-wrapper form #submit{
+		background: black;
+		color: #f5f5f5;
+		font-family: helvetica;
+		text-transform: uppercase;
+		font-weight: bolder;
+		}
+		footer{
+		margin: 1px 5px 0px;
+		padding: 2px 5px 0;
+		}
+		footer .footer-items{
+		text-align: center;
+		font-family: arial;
+		border: 2px solid black;
+		}
+		footer .footer-items p{
+		font-size: 12px;
+		padding: 2px 1px;
+		background: rgba(0,0,0,.7);
+		color: white;
+		}
+	</style>
+</head>
+<body>
+
+<nav>
+	<h2 onclick="home()">jena shelter</h2>
+	<i class="fas fa-paw"></i>
+	<ul>
+		<li><a onclick="petPage()" href="pets.html">Pets</a></li>
+		<li><a href="adopt.html">Adopt</a></li>
+		<li><a href="volunteer.html">Volunteer</a></li>
+		<li><a href="#">Donate</a></li>
+	</ul>
+</nav>
+
+<div class="adopt-wrapper">
+	<div class="adopt-form-wrapper">
+	
+		<h2>DO YOU LIKE PETS <i class="fas fa-question"></i></h2>
+		<form method="" action="">
+			<label for="firstname">First Name:</label></br>
+			<input type="text" id="firstname"></br>
+			<label for="lastname">Last Name:</label></br>
+			<input type="text" id="lastname"><br>
+			<label for="email">Email:</label></br>
+			<input type="text" id="email"><br>
+			<p class="own-pets">Do You Own Pets</p>
+			<div class="radio">
+			<label for="yes">Yes</label></br>
+			<input type="radio" name="gender" value="yes" id="yes"></br>
+			<label for="no">No</label><br>
+			<input type="radio" name="gender" value="no" id="no"></br>
+			</div>
+			<br>
+			<p class="why">Tell Us Why<i class="fas fa-question"></i></p>
+			<textarea rows="7" cols="40" maxlength="280"
+			placeholder="Genuine Answers Only"></textarea></br>
+			<input id="submit"onclick="adoptPet ()" type="submit" value="Submit">
+		</form>
+	</div>
+</div>
+
+<footer>
+	<div class="footer-items">
+		<p>©2020 mystique-pups.de</p>
+		<p>All trademarks are owned by Mystique Group N.G, or used with permission.</p>
+	</div>
+</footer>
+
+</body>
+
+</html>

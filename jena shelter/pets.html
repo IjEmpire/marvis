@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="nav-pets-style.css">
+	<script src="index.js"></script>
+</head>
+<body>
+
+<nav>
+	<h2 onclick="home()">jena shelter</h2>
+	<i class="fas fa-paw"></i>
+	<ul>
+		<li><a onclick="petPage()" href="pets.html">Pets</a></li>
+		<li><a href="adopt.html">Adopt</a></li>
+		<li><a href="volunteer.html">Volunteer</a></li>
+		<li><a href="#">Donate</a></li>
+	</ul>
+</nav>
+
+<div class="front-view">
+	<div class="text">
+		<h2 style="cursor:pointer" onclick="adverts()">Advertise here...</h2>
+		<p>for your adverts on our webpage and social media</br>
+		pages, reach out to us via e-mail on <u><strong title="E-mail">jenashelter@outlook.com</strong></u></br>
+		or on our social media pages below. Vielen Dank!!!</p>
+	</div>
+</div>
+
+<main>
+	<div class="sm" style="background-image: url(lock1.jpg);">
+		<h3>Follow us on facebook</h3>
+		<i id="fb"class="fab fa-facebook-square"></i>
+		<p>connect with us on facebook and be up to date</br>
+		with us on regular activities with our fiesty guests</br>
+		both indoor and outdoors <u><strong title="facebook" onclick="facebook()" style="cursor: pointer">@JenaShelterFB</strong></u></p>
+	</div>
+	
+	<div class="sm" style="background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );">
+		<h3>Follow us on instagram</h3>
+		<i id="ig"class="fab fa-instagram"></i>
+		<p>our instagram page has the most adorable photos</br>
+		captured by our staff, visitors and volunteers. </br>
+		Be sure give us a like*winks* @JenaShelterOfficial</p>
+	</div>
+	
+	<div class="sm"style="background: linear-gradient(to right,black,gray);">
+		<h3>Explore our videos on youtube</h3>
+		<i id="yt"class="fab fa-youtube-square"></i>
+		<p>special moments deserves to be captured<br>
+		for the viewing pleasure of all. Subscribe to</br>
+		the channela and thank us later. @ The Jena Pets</p>
+	</div>
+</main>
+
+<div class="grid">
+	<div class="pup1" style="background-image: url('pet-images/cat1.jpg');">
+		<div class="pup-info">
+			<h3>Charlie</h3>
+			<p> I'm a bad boy. woof!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog1.jpg');">
+		<div class="pup-info">
+			<h3>Max</h3>
+			<p>I love you & treatos</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat2.jpg');">
+		<div class="pup-info">
+			<h3>Coco</h3>
+			<p>I'm coco pops</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog2.jpg');">
+		<div class="pup-info">
+			<h3>Toby</h3>
+			<p>majestic toby!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat3.jpg');">
+		<div class="pup-info">
+			<h3>Bella</h3>
+			<p>I'm bad and bougie!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog3.jpg');">
+		<div class="pup-info">
+			<h3>Lucy</h3>
+			<p>Come take me Hooman!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat4.jpg');">
+		<div class="pup-info">
+			<h3>Molly</h3>
+			<p>I need a mommy</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog4.jpg');">
+		<div class="pup-info">
+			<h3>Daisy</h3>
+			<p>f*ck Donald trump!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat5.jpg');">
+		<div class="pup-info">
+			<h3>Archie</h3>
+			<p>play 'fetch' with me?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog5.jpg');">
+		<div class="pup-info">
+			<h3>Milo</h3>
+			<p>I know I'm cute!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat6.jpg');">
+		<div class="pup-info">
+			<h3>Oscar</h3>
+			<p>I'm vicious. scared?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog6.jpg');">
+		<div class="pup-info">
+			<h3>Buddy</h3>
+			<p>I'm bored. arf-arf!</p>
+		</div>
+	</div>
+	<div class="pup1" style="background-image: url('pet-images/cat7.jpg');">
+		<div class="pup-info">
+			<h3>Charlie</h3>
+			<p> I'm a bad boy. woof!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog7.jpg');">
+		<div class="pup-info">
+			<h3>Max</h3>
+			<p>I love you & treatos</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat8.jpg');">
+		<div class="pup-info">
+			<h3>Coco</h3>
+			<p>I'm coco pops</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog8.jpg');">
+		<div class="pup-info">
+			<h3>Toby</h3>
+			<p>majestic toby!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat9.jpg');">
+		<div class="pup-info">
+			<h3>Bella</h3>
+			<p>I'm bad and bougie!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog9.jpg');">
+		<div class="pup-info">
+			<h3>Lucy</h3>
+			<p>Come take me Hooman!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat10.jpg');">
+		<div class="pup-info">
+			<h3>Molly</h3>
+			<p>I need a mommy</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog10.jpg');">
+		<div class="pup-info">
+			<h3>Daisy</h3>
+			<p>f*ck Donald trump!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat11.jpg');">
+		<div class="pup-info">
+			<h3>Archie</h3>
+			<p>play 'fetch' with me?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog11.jpg');">
+		<div class="pup-info">
+			<h3>Milo</h3>
+			<p>I know I'm cute!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat12.jpg');">
+		<div class="pup-info">
+			<h3>Oscar</h3>
+			<p>I'm vicious. scared?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog12.jpg');">
+		<div class="pup-info">
+			<h3>Buddy</h3>
+			<p>I'm bored. arf-arf!</p>
+		</div>
+	</div>
+	<div class="pup1" style="background-image: url('pet-images/cat1.jpg');">
+		<div class="pup-info">
+			<h3>Charlie</h3>
+			<p> I'm a bad boy. woof!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog1.jpg');">
+		<div class="pup-info">
+			<h3>Max</h3>
+			<p>I love you & treatos</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat2.jpg');">
+		<div class="pup-info">
+			<h3>Coco</h3>
+			<p>I'm coco pops</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog2.jpg');">
+		<div class="pup-info">
+			<h3>Toby</h3>
+			<p>majestic toby!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat3.jpg');">
+		<div class="pup-info">
+			<h3>Bella</h3>
+			<p>I'm bad and bougie!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog3.jpg');">
+		<div class="pup-info">
+			<h3>Lucy</h3>
+			<p>Come take me Hooman!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat4.jpg');">
+		<div class="pup-info">
+			<h3>Molly</h3>
+			<p>I need a mommy</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog4.jpg');">
+		<div class="pup-info">
+			<h3>Daisy</h3>
+			<p>f*ck Donald trump!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat5.jpg');">
+		<div class="pup-info">
+			<h3>Archie</h3>
+			<p>play 'fetch' with me?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog5.jpg');">
+		<div class="pup-info">
+			<h3>Milo</h3>
+			<p>I know I'm cute!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat6.jpg');">
+		<div class="pup-info">
+			<h3>Oscar</h3>
+			<p>I'm vicious. scared?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog6.jpg');">
+		<div class="pup-info">
+			<h3>Buddy</h3>
+			<p>I'm bored. arf-arf!</p>
+		</div>
+	</div>
+	<div class="pup1" style="background-image: url('pet-images/cat7.jpg');">
+		<div class="pup-info">
+			<h3>Charlie</h3>
+			<p> I'm a bad boy. woof!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog7.jpg');">
+		<div class="pup-info">
+			<h3>Max</h3>
+			<p>I love you & treatos</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat8.jpg');">
+		<div class="pup-info">
+			<h3>Coco</h3>
+			<p>I'm coco pops</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog8.jpg');">
+		<div class="pup-info">
+			<h3>Toby</h3>
+			<p>majestic toby!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat9.jpg');">
+		<div class="pup-info">
+			<h3>Bella</h3>
+			<p>I'm bad and bougie!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog9.jpg');">
+		<div class="pup-info">
+			<h3>Lucy</h3>
+			<p>Come take me Hooman!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat10.jpg');">
+		<div class="pup-info">
+			<h3>Molly</h3>
+			<p>I need a mommy</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog10.jpg');">
+		<div class="pup-info">
+			<h3>Daisy</h3>
+			<p>f*ck Donald trump!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat11.jpg');">
+		<div class="pup-info">
+			<h3>Archie</h3>
+			<p>play 'fetch' with me?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog11.jpg');">
+		<div class="pup-info">
+			<h3>Milo</h3>
+			<p>I know I'm cute!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/cat12.jpg');">
+		<div class="pup-info">
+			<h3>Oscar</h3>
+			<p>I'm vicious. scared?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pet-images/dog12.jpg');">
+		<div class="pup-info">
+			<h3>Buddy</h3>
+			<p>I'm bored. arf-arf!</p>
+		</div>
+	</div>
+</div>
+
+
+
+<footer>
+	<div class="footer-items">
+		<p>©2020 mystique-pups.de</p>
+		<p>All trademarks are owned by Mystique Group N.G, or used with permission.</p>
+	</div>
+</footer>
+
+</body>
+
+</html>

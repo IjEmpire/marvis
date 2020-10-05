@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+}
+nav{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav h1{
+	text-transform: uppercase;
+	font-family: verdana;
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 1.6em;
+}

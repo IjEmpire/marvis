@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js"></script>
+</head>
+<body>
+<nav>
+	<h2 onclick="home()">jena shelter</h2>
+	<i class="fas fa-paw"></i>
+	<ul>
+		<li><a onclick="petPage()" href="pets.html">Pets</a></li>
+		<li><a href="adopt.html">Adopt</a></li>
+		<li><a href="volunteer.html">Volunteer</a></li>
+		<li><a href="#">Donate</a></li>
+	</ul>
+</nav>
+
+<div class="front">
+	<div class="text">
+		<h2>Puppy Shelter <i class="fas fa-dog"></i></h2>
+		<p onclick="change()">giving our furry friends<br>a place to call home</p>
+	</div>
+
+	<div class="appointment">
+		<h3 onclick="hello ()"  id="h3">make an appointment</h3>
+		<form>
+			<input id="name" type="text"placeholder="Name:"><br>
+			<input class="phone" type="text"placeholder="Phone:"><br>
+			<input class="email" type="text"placeholder="Email:"><br>
+			<input class="date" type="date" style="cursor: pointer"><br>
+			<input class="time" type="time">
+		</form>
+		<p onclick="submit()"><span style="color:white">sub</span>mit</p>
+	</div>
+</div>
+
+<div class="grid">
+	<div class="pup1" style="background-image: url('pup1.jpg');">
+		<div class="pup-info">
+			<h3>Charlie</h3>
+			<p> I'm a bad boy. woof!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup2.jpg');">
+		<div class="pup-info">
+			<h3>Max</h3>
+			<p>I love you & treatos</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup3.jpg');">
+		<div class="pup-info">
+			<h3>Coco</h3>
+			<p>I'm coco pops</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup4.jpg');">
+		<div class="pup-info">
+			<h3>Toby</h3>
+			<p>majestic toby!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup5.jpg');">
+		<div class="pup-info">
+			<h3>Bella</h3>
+			<p>I'm bad and bougie!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup6.jpg');">
+		<div class="pup-info">
+			<h3>Lucy</h3>
+			<p>Come take me Hooman!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup7.jpg');">
+		<div class="pup-info">
+			<h3>Molly</h3>
+			<p>I need a mommy</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup8.jpg');">
+		<div class="pup-info">
+			<h3>Daisy</h3>
+			<p>f*ck Donald trump!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup9.jpg');">
+		<div class="pup-info">
+			<h3>Archie</h3>
+			<p>play 'fetch' with me?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup10.jpg');">
+		<div class="pup-info">
+			<h3>Milo</h3>
+			<p>I know I'm cute!!!</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup11.jpg');">
+		<div class="pup-info">
+			<h3>Oscar</h3>
+			<p>I'm vicious. scared?</p>
+		</div>
+	</div>
+	
+	<div class="pup1" style="background-image: url('pup12.jpg');">
+		<div class="pup-info">
+			<h3>Buddy</h3>
+			<p>I'm bored. arf-arf!</p>
+		</div>
+	</div>
+</div>
+
+<div class="mission" style="background-image: url('lock.jpg');">
+	<div class="hours">
+		<ul>
+			<li><h3>Opening Hours</h3></li>
+			<li>montag &nbsp &nbsp <span style="color:red");>7am-6pm</span></li>
+			<li>dienstag &nbsp &nbsp <span style="color:orange");>7am-6pm</span></li>
+			<li>mittwoch &nbsp <span style="color:yellow");>9am-3pm</span></li>
+			<li>donnerstag <span style="color:green");>7am-6pm</span></li>
+			<li>freitag &nbsp &nbsp &nbsp <span style="color:blue");>9am-3pm</span></li>
+			<li>samstag &nbsp &nbsp &nbsp &nbsp <span style="color:violet");>closed</span></li>
+			<li>sonntag &nbsp &nbsp &nbsp &nbsp <span style="color:red");>closed</span></li>
+		</ul>
+	</div>
+	
+	<div class="address">
+		<ul>
+			<li  title="Google-Maps"><h3>ADDRESS &nbsp &nbsp <a href="https://www.google.com/maps/dir/50.9277386,11.5944852/Jenertal+4,+07749+Jena/@50.9242703,11.5877753,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47a6a8b77e58321f:0x85f152505822c220!2m2!1d11.59158!2d50.92032"><i style="box-shadow: 2px 0px 2px 8px orange";  class="fas fa-map-marker-alt"></i></a></h3></li>
+			<li title="Karl-von-Hase-Haus">Jenertal 4,</li>
+			<li title="Jena Ost">Jena 07749,</li>
+			<li title="Thuringia">Freistaat Thüringen,</li>
+			<li title="Germany">Deutschland</li>
+		</ul>
+	</div>
+	
+	<div class="address">
+		<ul>
+			<li><h3>come with the ff:</h3></li>
+			<li style="text-align:center;">joosy treatos <i class="fas fa-cookie-bite"></i></li>
+			<li style="text-align:center;">lots of love <i class="fas fa-grin-hearts"></i></li>
+			<li style="text-align:center;">fetch ball <i class="fas fa-volleyball-ball"></i></li>
+			<li style="text-align:center;">a fat bone <i class="fas fa-bone"></i></li>
+		</ul>
+	</div>
+</div>
+
+<div class="connect">
+	<ul>
+		<li><i class="fab fa-facebook-square" title="facebook"></i></li>
+		<li><i class="fab fa-twitter-square" title="twitter"></i></li>
+		<li><i class="fab fa-instagram" title="instagram"></i></li>
+		<li><i class="fab fa-pinterest-square" title="pinterest"></i></li>
+		<li><i class="fab fa-youtube-square" title="youtube"></i></li>
+	</ul>
+</div>
+
+<footer>
+	<div class="footer-items">
+		<p>©2020 mystique-pups.de</p>
+		<p>All trademarks are owned by Mystique Group N.G, or used with permission.</p>
+	</div>
+</footer>
+
+</body>
+
+</html>
