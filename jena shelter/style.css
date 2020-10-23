@@ -273,6 +273,7 @@ nav ul li a:hover{
 .connect ul  li{
 	font-size: 40px;
 	margin-right: 30px;
+	cursor: pointer;
 }
 
 /*styling the footer*/
