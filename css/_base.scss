@@ -4,6 +4,28 @@
     top: 150px;
     width: 100%;
 
+    
+    .link-up.collabo{
+        background: linear-gradient(to right, #141e30,#243b55);
+        color: white;
+        position: relative;
+        top: -60px;
+        margin: 0 75px;
+        padding: 45px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+                box-shadow: 0 8px 6px -6px black;
+
+        @media screen and (max-width: 800px){
+            flex-direction: column;
+        }
+    }
+
     .link-up{
         background: linear-gradient(to right, #141e30,#243b55);
         color: white;
@@ -28,6 +50,9 @@
             margin-bottom: 15px;
             padding: 5px 0;
         }
+        .h1-collabo{
+            margin-bottom: 10px;
+        }
 
         p{
             padding-right: 25px;
@@ -37,6 +62,16 @@
 
             @media screen and (max-width: 800px){
                 margin: 0 5px 30px 5px;
+            }
+        }
+        .p-collabo{
+            padding-right: 20px;
+            padding-left: 20px;
+            color: hsl(210, 10%, 95%);
+            text-align: center;
+
+            @media screen and (max-width: 800px){
+                margin: 0 5px 5px 5px;
             }
         }
 
