@@ -1,102 +1,241 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta charset="utf-8">
-	<title>About</title>
-	<style type="text/css" rel="stylesheet">
-	@media only screen and (max-width: 520px) {
-		.profile-img-wrapper img{
-			transition: 1s;
-			border: 1px solid white;
-			-webkit-box-shadow: 0 0 5px 2px #fff;
-			-moz-box-shadow: 0 0 5px 2px #fff;
-			box-shadow: 0 0 5px 5px #fff;
-		}
-	
-		.portfolio-items-wrapper {
-			display: grid;
-			grid-template-columns: 1fr;
-		}
-		.nav-wrapper{
-			background: #b7d7e8;
-			border-bottom: 1px solid lightseagreen;
-			border-bottom-width: 90%;
-			display: flex;
-			justify-content: space-between;
-			padding: 20px;
-		}
-		.nav-wrapper:hover{
-			border-bottom: 3px solid black;
-			transition: .3s;
-		}
-		body{
-			background-color: #b7d7e8;
-			font-family: "Lato", sans-serif;
-		}
-		section{
-			color: black;
-		}
-		.two-column-wrapper{
-			display: grid;
-			grid-template-columns: 1fr;
-		}
-		.profile-content-wrapper{
-			font-size: .9rem;
-		}
-	}
-
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web.Dev Marvis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+	<link rel="shortcut icon" type="img/png" href="img/programing.png">
 </head>
 <body>
-	<div class="container">
-		<div class="nav-wrapper">
-			<div class="left-side">
-				<div class="nav-link-wrapper">
-					<a href="index.html">Home</a>
-				</div>
+    <nav>
+       <div class="navbar">
+            <div class="brandname">
+                <a class="brandlink"href="index.html">Marvis</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="collabo.html">collaborate</a></li>
+                <li><a href="contact.html">hello</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="intro-section">
+        <div class="intro">
+            <h1 class="intro-h1">Front-end Developer & Python Enthusiast</h1>
+            <p class="intro-p">I use html, css and javascript to build responsive and interactive websites. I keep it simple and functional.</p>
+            <img class="avatar"src="img/programing1.png" alt="">
+        </div>
+        <div class="hi">
+            <div class="hi-wrap">
+                <h1>
+                    Hi there, I'm Marvis. Pleasure to meet you.
+                </h1>
+                <h2>
+                    I started learning how to code from scratch on my own.
+                    It took only a couple of hours before I realised that this is what I wanna do.
+                    For the last 12 months as a freelance web-developer, I've done remote work for small businesses
+                    and also collaborated with other web developers (junior, senior as well as full-stack) to create 
+                    amazing content for the web. I'm curious by default, constantly improving my skills and working to
+                    gain more.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="columns">
+
+            <div class="column">
+                <figure class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </figure>
+                <h1 class="skill-a">
+                    Python Developer
+                </h1>
+                <p class="skill-b">
+                    The syntax is simple to understand and it has a lot of potentials.
+                </p>
+                <p class="skill-c">
+                    What I use Python for:
+                </p>
+                <p class="skill-d">
+                    Games, Data Science, A.I, Web Dev
+                </p>
+                <p class="skill-e">
+                    Python Tools:
+                </p>
+                <ul class="skill-f">
+                    <li>Scikit-Learn</li>
+                    <li>SciPy</li>
+                    <li>Robot Framework</li>
+                    <li>Selenium</li>
+                    <li>Beautiful Soup</li>
+                    <li>Scrapy</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <figure class="skill-icon">
+                    <i class="fab fa-js-square"></i>
+                </figure>
+                <h1 class="skill-a">
+                    Front-end Developer
+                </h1>
+                <p class="skill-b">
+                    I just want to code every section of that page like you dreamt about it.
+                </p>
+                <p class="skill-c">
+                    My favourite languages:
+                </p>
+                <p class="skill-d">
+                    HTML, CSS, Sass, Javascript, Python
+                </p>
+                <p class="skill-e">
+                    Dev Tools:
+                </p>
+                <ul class="skill-f">
+                    <li>Visual Code Studio</li>
+                    <li>Atom</li>
+                    <li>Notepad++</li>
+                    <li>Django</li>
+                    <li>ReactJS</li>
+                    <li>Github Desktop</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <figure class="skill-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </figure>
+                <h1 class="skill-a">
+                    Educational Background
+                </h1>
+                <p class="skill-b">
+                    BSc Finance, MSc Economics (in-view), Commerce most of my life
+                </p>
+                <p class="skill-c">
+                    Areas of Specilization:
+                </p>
+                <p class="skill-d">
+                    Statistics, Portfolio Mgt, Economics of Innovation
+                </p>
+                <p class="skill-e">
+                    Experiences:
+                </p>
+                <ul class="skill-f">
+                    <li>High School Math Teacher</li>
+                    <li>Sales Rep</li>
+                    <li>Purchasing Manager</li>
+                    <li>Branch Manager</li>
+                    <li>Commerce</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="recent">
+
+        <div class="recent-1">
+            <h1 class="recent-1-header">
+                my recent work
+            </h1>
+            <p class="recent-1-subtext">
+                I put together a couple of projects I have worked on. You have questions? <a href="mailto:marvisijenwa@gmail.com">Email me.</a>
+            </p>
+        </div>
+
+        <div class="recent-2-wrapper">
+			<div class="portfolio-items-wrapper"> 
 				
-				<div class="nav-link-wrapper active-nav-link">
-					<a href="about.html">About</a>
-				</div>
-			</div>
-			
-			<div class="right-side">
-				<div class="brand">
-					<div class="myname"> MARVIS&nbsp;&nbsp; IJENWA </div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="content-wrapper">
-			<div class="two-column-wrapper">
-				<div class="profile-img-wrapper">
-					<img src="images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg">
-				</div>
-				<div class="aboutme">
-					<a href="">about me</a>
-				</div>
-				<div class="profile-content-wrapper">
-					<h1>Hello, thanks for visiting.</h1>
-					<p>Thinking of expanding your local business and securing
-					your spot on the global market? All you need to do 
-					is  getting your business on the internet. It's pretty much like
-					opening a new branch. Just that this branch never closes,
-					doesn't force you out of bed in the morning and increases
-					sales, market share, customer base and profit all at the same
-					time and guess what, all at a lower cost.
-					Contact me and we'll work together to see those dreams turn to
-					reality. Do visit my social media pages for more information about my works.</p>
-					<p class="madiba">It always seems impossible until its done - Nelson Mandela.</p>
-					<p class="icon"><i class="fas fa-quote-right"></i></p>
-				</div>
+				<div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(img/a.jpg)">
+                    </div>	
+				</div> 
 				
+                <a href="My Portfolio\index.html">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(img/b.png)">
+                        </div>		
+                    </div>
+                </a>
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(img/c.jpg)"></div>
+				</div> 
+                
+                <a href="jena shelter\index.html">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(img/d.png)"></div>		
+                    </div>
+                </a>
+                
+                <a href="https://ijempire.github.io/TinyHomesNG/">
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(img/e.png)"></div>		
+                    </div>
+                </a>
+                
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(img/f.jpg)"></div>		
+                </div> 
+                
 			</div>
-			
 		</div>
 
-	</div>
-	
+        <div class="recent-3">
+            <p class="recent-3-btn">
+                <a href="https://github.com/IjEmpire">See more on GitHub</a>
+            </p>
+        </div>
+
+    </section>
+
+    <section class="base">
+
+        <div class="link-up">
+            <h1>Start a project</h1>
+            <p>Interested in working together? Let's meet up for a chat. Coffee is on me</p>
+            <div class="meet-up-btn">
+                <a href="#">MeetUp</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer1">
+                <div class="brandname">
+                    <a class="brandlink"href="#">Marvis</a>
+                </div>
+                <h2 class="footer1-quote">anything is possible</h2>
+            </div>
+
+            <div class="sm-icons">
+                <ul>
+                    <li><a title="linkedIn" href="https://www.linkedin.com/in/marvis-ijenwa-b898011b3"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a title="instagram" href="https://www.instagram.com/buchi_ij/"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a title="twitter" href="https://twitter.com/IJ_Empire"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a title="resume" href="https://resume.io/r/2PLVNcPxy"><i class="fas fa-link"></i></a></li>
+                    <li><a title="github" href="https://github.com/IjEmpire"><i class="fab fa-github-square"></i></a></li>
+                    <li><a title="codepen" href="https://codepen.io/ijempire"><i class="fab fa-codepen"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p class="imprint">
+                    <a href="#">Imprint</a>
+                </p>
+                <p class="c">
+                    2020 <span><i class="far fa-copyright"></i></span>, Ij_buchi Ltd. or its affiliates
+                </p>
+            </div>
+        </footer>
+
+    </section>
+
+
+
 </body>
 </html>
