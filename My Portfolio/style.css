@@ -43,6 +43,10 @@ body{
 	border: 1px solid transparent;
 	transition: .5s ease-in-out;
 }
+.nav-wrapper .brand .myname a{
+	text-decoration: none;
+	color: black;
+}
 .brand .myname:hover{
 	color: rgba(214,212,224,.8);
 	background-color: black;
