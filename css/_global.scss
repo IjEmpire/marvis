@@ -7,6 +7,12 @@
 body{
     background: hsl(0, 0%, 99%);
 }
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #22303c;
+      color: white;
+    }
+}
 ::-webkit-scrollbar {
     width: 12px;
     margin-right: 2px;
