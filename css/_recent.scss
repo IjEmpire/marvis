@@ -80,6 +80,7 @@
             
             .portfolio-item-wrapper {
                 position: relative;
+                transition: transform 0.5s;
         
                 .portfolio-img-background{
                     height: 250px;
@@ -123,6 +124,10 @@
             }
                 
         }
+    }
+    
+     .portfolio-item-wrapper:hover{
+         transform: translateY(-10px);
     }
     
     .recent-3{
