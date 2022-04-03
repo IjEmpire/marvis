@@ -1,4 +1,2 @@
-My portfolio website
-Looking forward to landing 
-my first job in web development
+My Portfolio Website
 https://ijempire.github.io/marvis/
